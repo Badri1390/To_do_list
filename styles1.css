@@ -1,0 +1,109 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: gradient(0, 0, 0);
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #f598a8, #f6edb2);
+}
+
+
+.container {
+  margin-top: 200px;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.header{
+  display: flex;
+  gap: 5px;
+}
+
+.header img{
+  width: 40px;
+}
+
+.header, .txt, .task{
+  font-size: 25px;
+}
+
+.todoTxt{
+  display: flex;
+  /* //flex-wrap: wrap; */
+  gap: 5px;
+}
+
+
+.add{
+  background-color: rgb(116, 185, 116);
+  width: 60px;
+  border-radius: 10%;
+}
+
+.cart{
+  background-color: rgb(208, 36, 36);
+  width: 40px;
+}
+
+.task{
+  display: flex;
+  margin-top: 5px;
+  gap: 5px;
+  
+}
+.txtValue{
+  /* border: 1px gray solid; */
+  /* background-color: rgb(244, 238, 238); */
+}
+
+.txtValue::before{
+  content: "\2022  ";
+}
+
+
+@media (min-device-width: 370px) and (max-device-width: 381px) and (orientation: portrait) {
+  .body{
+    padding: 15px;
+  }
+} 
