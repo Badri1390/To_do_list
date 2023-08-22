@@ -50,6 +50,7 @@ body {
   box-sizing: border-box;
   padding: 10px;
   display: flex;
+  /* flex-shrink: 5; */
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -102,8 +103,13 @@ body {
 }
 
 
-@media (min-device-width: 370px) and (max-device-width: 381px) and (orientation: portrait) {
-  .body{
+@media (min-device-width: 370px) and (max-device-width: 450px) and (orientation: portrait) {
+  /* .container{
+    width: 400px;
+    background-color: aqua;
     padding: 15px;
+  } */
+  .txt{
+    width: 260px;
   }
 } 
