@@ -97,11 +97,12 @@ body {
   display: flex;
   margin-top: 5px;
   gap: 5px;
-  
+
 }
+
 .txtValue{
-  /* border: 1px gray solid; */
-  /* background-color: rgb(244, 238, 238); */
+  word-break: break-all;
+  max-width: 320px;
 }
 
 .txtValue::before{
