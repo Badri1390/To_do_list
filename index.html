@@ -23,11 +23,14 @@
   </head>
   <body>
     <div class="container">
-      <div class="header">Список дел<img src="list.png" alt=""></div>
+      <div class="header">Список дел<img src="list.png" alt="" /></div>
       <div class="todoTxt">
-        <input type="text" class="txt" placeholder="Введите текст..."/><button class="add">Add</button>
+        <input type="text" class="txt" placeholder="Введите текст..." /><button
+          class="add"
+        >
+          Add
+        </button>
       </div>
-      
     </div>
     <script>
       let container = document.querySelector(".container");
@@ -35,13 +38,18 @@
       let txt = document.querySelector(".txt");
 
       btn.addEventListener("click", () => {
-        let div = document.createElement("div");
-        div.className = "task";
-        div.innerHTML = `<div class='task'><div class='txtValue'>${txt.value}</div><button class="cart"><img src="cart.png" alt="cart"></button></div>`;
-        container.appendChild(div);
-        div.onclick = function () {
-          div.remove();
-        };
+        if (txt.value == "") {
+          alert("Вы ничего не написали");
+        } else {
+          let div = document.createElement("div");
+          div.className = "task";
+          div.innerHTML = `<div class='task'><div class='txtValue'>${txt.value}</div><button class="cart"><img src="cart.png" alt="cart"></button></div>`;
+          container.appendChild(div);
+          txt.value = "";
+          div.onclick = function () {
+            div.remove();
+          };
+        }
       });
     </script>
   </body>
