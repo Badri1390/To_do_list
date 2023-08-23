@@ -78,7 +78,7 @@ body {
 
 ::placeholder {
   color: gray;
-  font-size: 13px;
+  font-size: 9px;
 }
 
 
@@ -103,6 +103,7 @@ body {
 .txtValue{
   word-break: break-all;
   max-width: 320px;
+  font-size: 10px;
 }
 
 .txtValue::before{
